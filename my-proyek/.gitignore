@@ -1,0 +1,25 @@
+# setup git proyek local Development
+```sh
+$ git init
+```
+
+git command :
+-git status 
+-git add  [filepath...] example for multi add git add ./file ./file2 ... ./fileN //menyimpan perubahan untuk sementara di stagging
+-git commit [option] [argument]//meyimpan perubahan permanent dari stagging ke repositori local
+
+option :
+1. -m //add commit message
+2. 
+
+### format masage format commit 
+<type>[optional scooe]: <description>
+[optional body]
+[optional footer(s)] //signature
+
+# type commit
+chor type commit dependence
+docs type commit untunk documentation
+style type commit untuk perubahan styling penulisan *bukan styling interface
+refactor penulisan ulang untuk meng efisiensikan kode lama dan memudah kan keterbacaan kode
+
