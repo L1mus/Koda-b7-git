@@ -1,41 +1,77 @@
-# setup git proyek local Development
+# GIT BASICS
+
+## **1. Git system initialization**
 
 ```sh
 $ git init
 ```
 
-git command :
--git status
--git add [filepath...] example for multi add git add ./file ./file2 ... ./fileN //menyimpan perubahan untuk sementara di stagging
--git commit [option] [argument]//meyimpan perubahan permanent dari stagging ke repositori local
+## **2. Save into staging area (temporary changes)**
 
-git commit dengan pesan panjang
--git commit
+```sh
+$ git add [filepath...]
+```
 
-option :
+## **3. Commit (permanent changes)**
 
-1. -m //add commit message
-   2.--amend
+```sh
+$ git commit [option] [argument]
+```
 
-### format masage format commit
+&nbsp;&nbsp;&nbsp;&nbsp;
+option:
 
-<type>[optional scooe]: <description>
-[optional body]
-[optional footer(s)] //signature
+- `-m` : menambahkan pesan commit
 
-# type commit
+```sh
+$ git commit -m "type: description"
+```
 
-chor type commit dependence
-docs type commit untunk documentation
-style type commit untuk perubahan styling penulisan \*bukan styling interface
-refactor penulisan ulang untuk meng efisiensikan kode lama dan memudah kan keterbacaan kode
+- `--amend`: memperbaiki pesan commit yang baru saja terjadi
 
--git commit --amend //melakukan edit pada commit sebelumnya/terbaru
+**Commit dengan pesan panjang**
 
-# Remote Repo
+```sh
+$ git commit
+```
 
--git remote [command] [argument] //add remote repo
-//add remote repo
--git remote add origin [url] //example : git remote add origin/upstream https:://exmaple.git
-//view remote url
--git remote get-url [remote_name]
+## **4. Remote Repository**
+
+- `remote` command
+
+```sh
+$ git remote [command] [argument]
+```
+
+```sh
+# view remote list
+$ git remote
+# add remote repository
+$ git remote add [remote_name] [remote_url]
+# view remote url
+$ git remote get-url [remote_name]
+```
+
+- Sinkronisasi dengan `push` dan `pull`
+
+```sh
+# sinkronisasi dari lokal ke remote
+$ git push [remote_name] [branch_name]
+# sinkronisasi dari remote ke lokal
+$ git pull [remote_name] [branch_name]
+```
+
+## **5. Config**
+
+## **6. Cloning**
+
+Replikasi identik
+
+```sh
+# jika ingin menggunakan nama folder sama dengan nama repo
+$ git clone [url]
+# jika ingin menggunakan nama folder berbeda dari naam repo
+$ git clone [url] [namaFolder]
+```
+
+namaFolder diberikan jika menginginkan nama folder yang berbeda dengan nama repo
