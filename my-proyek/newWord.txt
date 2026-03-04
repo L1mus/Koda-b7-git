@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-console.log("git")
-=======
-console.log("123)
->>>>>>> lesssecret
+console.log("123)console.log("git")
